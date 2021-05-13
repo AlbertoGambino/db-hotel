@@ -38,6 +38,7 @@ SELECT  ospiti.name AS nome_ospite, ospiti.lastname ,
     JOIN paganti
         ON pagamenti.pagante_id = paganti.id
     WHERE prenotazioni.created_at > '2018-05-01'
+    AND prenotazioni.created_at < '2018-06-01'
 
 - Fai la somma di tutti i prezzi delle prenotazioni per le stanze del primo piano
 
